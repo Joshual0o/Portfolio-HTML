@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.logo img {
+    width: 90px; 
+    height: auto; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-bottom: 2px solid black;
+    overflow: hidden; 
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    transition: transform 1s ease-in-out; 
+}
+
+/* Logo Animation */
+.hero-logo {
+    width: 800px; /* Adjust this value for desired size */
+    height: auto; /* e aspect ratio */
+    margin-right: 20px; 
+    animation: moveLogo 1s forwards; 
+}
+
+/* Keyframes for the logo movement */
+@keyframes moveLogo {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100px); /* Move left (adjust as needed) */
+    }
+}
+
+/* WELCOME Text */
+.hero-text {
+    opacity: 0; 
+    animation: fadeIn 1s forwards 1s; 
+    font-size: 50px;
+}
+
+/* Keyframes for the text fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
