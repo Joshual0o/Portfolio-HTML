@@ -85,3 +85,35 @@ body {
         opacity: 1; 
     }
 }
+
+
+.about {
+    padding: 50px 20px; /* Adjust padding as needed */
+    border-bottom: 2px solid black; /* Defines the section with a line */
+}
+
+.about-title {
+    text-align: center; 
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.about-text {
+    flex: 2; 
+    font-size: 18px; 
+}
+
+.about-image img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 30px; 
+    flex: 1; 
+}
+
